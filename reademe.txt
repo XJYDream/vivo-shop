@@ -1,0 +1,28 @@
+package-lock.json
+锁定安装时的包的版本号，并且需要上传到git，
+以保证其他人在npm install时大家的依赖能保证一致。
+搭建 静态页各块
+模块化整合 
+footer = footer1 + footer2 
+or 
+Copyright ©2011-2019 广东步步高电子工业有限公司 版权所有 保留一切权利 | 隐私政策 | 法律声明 | 粤B2-20080267 | 粤ICP备05100288号  | 中国
+直接写
+// 项目
+1、 文件夹 modules
+ //命令行操作
+2、 node安装 node-v 查看版本
+3、 npm安装 npm -v 查看版本
+4、gulp 全局安装 npm i gulp@3 -g
+5、 项目根目录 npm init(初始化) // npm init -y (默认 手动修改)
+6、 项目根目录 局部安装gulp npm i gulp@3
+7、 项目本地 安装插件 任务功能插件
+     gulp-uglify js压缩 npm i gulp-uglify
+     json 文本文件 数据格式 不是可执行代码 不能写注释
+
+babel-preset-env  babel-core 依赖包之类相关   
+
+
+n、 gulp 指定任务src文件转到dist 集中执行 开启（监听 重启）服务器
+
+dist src 其他文件 辅助项目工程化运行
+//config

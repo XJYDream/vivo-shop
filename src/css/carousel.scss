@@ -1,0 +1,148 @@
+// 第三方csshtml页面引入 自己写的 index.css  在后面
+.banner{
+    width: 100%;
+    height: 523px;
+    position: relative;
+}
+.banner .swiper-container{
+    height: 523px;
+}
+.banner .swiper-container .swiper-wrapper .swiper-slide{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.banner .swiper-container div img{
+    height: 523px;
+    position: absolute;
+    left: -50%;
+    cursor: pointer;
+    // 图片大于容器盒子 居中 js  背景图  父p -r  overf -hid  子 绝对left
+}
+
+.banner .swiper-pagination{
+    width: 110px;
+    left: 0;right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+// list
+.category-ac{
+    display: block !important;
+}
+.banner .category{
+    position: absolute;
+    top: 0;bottom: 0;
+    margin: auto;
+    left: 34px;
+    width: 200px;
+    height: 482px;
+    font-size: 0;
+    line-height: 1;
+    background: rgba(255,255,255,.65);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.banner .category>li{
+    width: 100%;
+    height: 12%;
+}
+.banner .category>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #333;
+    font-size: 14px;
+    line-height: 60px;
+}
+.banner .category>li .category-hover{
+    display: none;
+    position: absolute;
+    left: 215px;
+    top: 0;
+    width: 750px;
+    height: 482px;
+    background: red;
+}
+.banner .category>li:hover{
+    background: #fff;
+}
+.banner .category>li .category-hover div{
+    width: 656px;
+    height: 58px;
+    position: absolute;
+    left: 0;right: 0;
+    margin: auto;
+    top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner .category>li .category-hover div p{
+    // width: 
+    color: #252525;
+    font-size: 16px;
+    line-height: 58px;
+}
+.banner .category>li .category-hover .kind{
+    position: absolute;
+    left: 0;right: 0;
+    margin: auto;
+    top: 85px;
+    width: 656px;
+    height: 143px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #333;
+}
+.banner .category>li .category-hover .kind li{
+    width: 20%;
+    height: 50px;
+    margin-right: 0%;
+    margin-left: 4%;
+    margin-top: 10px;    
+    float: left;
+}
+.banner .category>li .category-hover .kind li a{
+    display: block;
+    height: 100%;
+    color: #555;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 6px;
+    background-image: url(../images/phone-kind-1.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.banner .banner-wrap{
+    height: 100%;
+}
+.banner .banner-wrap .img-list{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.banner .banner-wrap .img-list li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s;
+    opacity: 0;
+    z-index: 0;
+}
+.banner .banner-wrap .img-list .ac{
+    z-index: 5;
+    opacity: 1;
+}
+.banner .banner-wrap .img-list li img{
+    position: absolute;
+    left: -650px;
+    height: 523px;
+}

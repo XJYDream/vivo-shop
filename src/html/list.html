@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header-container"></header>
+    <!-- list -->
+    <div class="list-container">
+        <div class="list-title">
+            <div class="crumbs">
+                <a href="javascript:;">商城首页</a>
+                <b></b>
+                <a href="javascript:;">智能手机</a>
+                <b></b>
+                <span>IQOO</span>
+            </div>
+        </div>
+        <div class="list-filter">
+            <ul>
+                <li><a href="javascript:;">智能手机</a></li>
+                <li><a href="javascript:;">配件产品</a></li>
+                <li><a href="javascript:;">服务</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="javascript:;">全部</a>
+                    <a href="javascript:;">iQOO</a>
+                    <a href="javascript:;">NEX系列</a>
+                    <a href="javascript:;">X系列</a>
+                    <a href="javascript:;">S系列</a>
+                    <a href="javascript:;">Z系列</a>
+                    <a href="javascript:;">Y系列</a>
+                    <a href="javascript:;">U系列</a>
+                </li>
+            </ul>
+        </div>
+        <div class="list-content">
+            <ul id="list-content-container"></ul>
+        </div>
+        <script type="text/html" id="list-content-template">
+            {{each list item}}
+            <li>
+                <a href="./detail.html?id={{item.int}}" id="{{item.int}}" >
+                    <div>
+                        <img src="{{item.image_s}}" alt="">
+                    </div>
+                    <div>
+                        <img src="{{item.image_b}}" alt="">
+                    </div>
+                    <div>
+                        <p> {{item.txt_s}}</p>
+                        <p>
+                            <!-- 错误 不能使用- 可以_ -->
+                            <span>【{{item.txt_b}}】</span>
+                        </p>
+                        <p>￥{{item.num}}</p>
+                    </div>
+                </a>
+            </li>
+            {{/each}}
+        </script>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="../js/list"></script>
+</body>
+</html>

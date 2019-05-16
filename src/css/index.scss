@@ -1,0 +1,190 @@
+@import "../iconfont/footer-icon/iconfont.css";
+@import "../iconfont/header-logo-icon/iconfont.css";
+@import "module/base.scss";
+@import "module/header.scss";
+@import "carousel.scss";
+@import "module/footer.scss";
+
+// 为何scss
+// 主页的main样式
+// banner
+
+// banner-out-bottom
+.banner-out-bottom{
+    height: 180px;
+    width: 100%;
+    padding: 0 3%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: orange;
+}
+
+.banner-out-bottom li{
+    height: 140px;
+    width: 24.5%;
+}
+.banner-out-bottom li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.banner-out-bottom li a img{
+    width: 100%;
+    height: 100%;
+    display: inline;
+}
+// hotSell
+.hotSell{
+    height: 610px;
+    width: 100%;
+}
+.hotSell .info{
+    height: 90px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hotSell .info p{
+    color: #333;
+    font-size: 24px;
+}
+.hotSell .info a{
+    position: absolute;
+    right: 30px;
+    width: 50px;
+    color: #333;
+    font-size: 14px;
+}
+.hotSell .info a img{
+    display: inline;
+    position: absolute;
+    top: 4px;left: 33px;
+}
+// .hotSell .info a:after{
+//     // width: 20px;
+//     content: '';
+//     background-image: url(/dist/images/info-more.png);
+//     background-size: 7px 11px;
+//     position: absolute;
+//     right: 30px;
+//     z-index: 100;
+// }
+.hotSell>ul{
+    height: 520px;
+    width: 100%;
+    padding: 0 3%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background: orange;
+}
+.hotSell>ul>li{
+    width: 32%;
+    height: 97%;
+    // border: 1px solid red;
+    position: relative;
+    background: #fff;
+    transition: all .2s linear;
+}
+.hotSell>ul>li:hover{
+    box-shadow: 0 3px 20px 4px #3f3e3e;
+}
+.hotSell>ul>li:hover .hover-color{
+    z-index: 5;
+}
+.hotSell>ul>li>a{
+    height: 288px;
+    width: 100%;
+    // background: red;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hotSell>ul>li>a img{
+    width: 60%;
+    height: 80%;
+}
+.hotSell>ul>li .hover-color{
+    position: absolute;
+    top: 300px;
+    height: 100px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.hotSell>ul>li .hover-color p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+    line-height: 30px;
+}
+.hotSell>ul>li .hover-color ul{
+    margin-top: -20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 35%;
+    display: flex;
+    justify-content: space-around;
+    transition: all .2s linear;
+}
+.hotSell>ul>li .hover-color ul li{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.hotSell>ul>li .hover-color ul li:hover{
+    box-shadow: 0 3px 20px 4px #3f3e3e;
+}
+.hotSell>ul>li .hover-color ul li:nth-child(1){
+    background-color: orange;
+}
+.hotSell>ul>li .hover-color ul li:nth-child(2){
+    background-color: blue;
+}
+.hotSell>ul>li .hover-color ul li:nth-child(3){
+    background-color: purple;
+}
+.hotSell>ul>li .prodinfo{
+    position: absolute;
+    top: 288px;
+    z-index: 2;
+    background: #fff;
+    height: 210px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hotSell>ul>li .prodinfo .name{
+    font-size: 20px;
+    color: #333;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.hotSell>ul>li .prodinfo .feature{
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    height: 24px;
+    margin-bottom: 50px;
+}
+.hotSell>ul>li .prodinfo .phone-price{
+    color: red;
+    margin-bottom: 20px;
+}
+.hotSell>ul>li .prodinfo .phone-price::before{
+    content: "￥";
+    color: red;
+    font-size: 14px;
+}

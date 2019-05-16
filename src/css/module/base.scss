@@ -1,0 +1,23 @@
+*{margin: 0; padding: 0;}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0 none;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+body{
+    background: #f7f7f7;
+}
+.table-cell {
+    display: table-cell;
+}
+b, em, i {
+    font-weight: 400;
+    font-style: normal;
+}

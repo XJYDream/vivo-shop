@@ -1,0 +1,181 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+
+
+.list-container{
+    height: 623px;
+}
+.list-container .list-title{
+    height: 72px;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.list-container .list-title .crumbs{
+    height: 72px;
+    color: #999;
+    font-size: 13px;
+    padding: 24px 0;
+    box-sizing: border-box;
+}
+.list-container .list-title .crumbs a{
+    color: #333;
+    font-size: 13px;
+    display: inline-block;
+}
+.list-container .list-title .crumbs b{
+    background: url(../images/detail-title-pic.png) no-repeat -8px -62px;
+    width: 8px;
+    height: 24px;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+}
+.list-container .list-filter{
+    padding: 0 36px;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 38px;
+}
+.list-container .list-filter ul:nth-child(1){
+    position: relative;
+    margin: 0 -18px;
+    padding: 7px 0 1px;
+    font-size: 1px;
+    text-align: justify;
+}
+.list-container .list-filter ul:nth-child(1) li{
+    margin: 0 18px;
+    display: inline-block;
+}
+.list-container .list-filter ul:nth-child(1) li a{
+    position: relative;
+    display: block;
+    color: #777;
+    font-size: 16px;
+    text-align: center;
+    line-height: 63px;
+}
+.list-container .list-filter ul:nth-child(1) li a:hover{
+    color: #000;
+}
+.list-container .list-filter ul:nth-child(2){
+    border-top: 1px solid rgb(143, 142, 142);
+    padding: 2px 0;
+}
+.list-container .list-filter ul:nth-child(2) li{
+    overflow: hidden;
+    padding: 11px 0;
+}
+.list-container .list-filter ul:nth-child(2) li a{
+    margin-right: 44px;
+    white-space: nowrap;
+    color: #777;
+    line-height: 30px;
+}
+.list-container .list-filter ul:nth-child(2) li a:hover{
+    color: #000;
+}
+.list-container .list-content{
+    height: 390px;
+    background: pink;    
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.list-container .list-content ul{
+    height: 390px;
+    padding-left: 0px;
+}
+.list-container .list-content ul li{
+    float: left;
+    margin-right: 11px;
+    width: 289px;
+    height: 340px;
+    padding-top: 40px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+    font-size: 0;
+    text-align: center;
+    background-color: #fff;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.list-container .list-content ul li a{
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+.list-container .list-content ul li a div:nth-child(1){
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    right: 60px;
+    top: -7px;
+    z-index: 1;
+}
+.list-container .list-content ul li a div:nth-child(1) img{
+    width: 100%;
+    height: auto;
+}
+.list-container .list-content ul li a div:nth-child(2){
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+}
+.list-container .list-content ul li a div:nth-child(2) img{
+    display: block;
+    width: 180px;
+    height: 180px;
+}
+.list-container .list-content ul li a div:nth-child(3){
+    width: 180px;
+    margin: 20px auto 0;
+}
+.list-container .list-content ul li a div:nth-child(3) p{
+    text-align: center;
+    overflow: hidden;
+}
+.list-container .list-content ul li a div:nth-child(3) p:nth-child(1){
+    margin: 0 0 10px;
+    color: #000;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.list-container .list-content ul li a div:nth-child(3) p:nth-child(2){
+    margin: 0 0 23px;
+    height: 35px;
+    color: #333;
+    font-size: 12px;
+    line-height: 18px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.list-container .list-content ul li a div:nth-child(3) p:nth-child(2) span:nth-child(1){
+    color: #333;
+    font-size: 12px;
+    line-height: 18px;
+    word-break: break-all;
+}
+.list-container .list-content ul li a div:nth-child(3) p:nth-child(3){
+    color: #f51919;
+    font-size: 16px;
+    line-height: 1;
+}

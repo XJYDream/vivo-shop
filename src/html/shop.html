@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- <link rel="stylesheet" href="./index_vivoshop.css"> -->
+		<link rel="stylesheet" href="/css/shop.css">
+	</head>
+	<body>
+		<!-- header -->
+		<header id="header-container"></header>
+		<!-- cart -->
+		<div id="content">
+			<div class="wrapper ">
+				<table class="main-title-module">
+					<tbody>
+						<tr>
+							<td></td>
+							<th class="main-title-txt">我的购物车</th>
+							<td><a class="continue-shopping" href="/index.html">继续购物 <b>&gt; </b></a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="wrapper " id="wrap-shop-list-container">
+				
+			</div>
+			<div class="cart-toolbar-wrap">
+				<div class="cart-toolbar-wrap" id="fixed-bottom-bar" style="left: 0px;">
+					<div class="wrapper ">
+						<div class="cart-toolbar-inner cl">
+							<div class="option-operation">
+								<ul>
+									<li>
+										<label class="J_viewCheckAll">
+											<i id="all-bottom" class="checkbox all-check"></i> &nbsp;<a href="javascript:void(0);">全选</a>
+										</label>
+									</li>
+									<li><a class="J_delMultiple" href="javascript:void(0);">删除选中的商品</a></li>
+									<li><a class="J_favoriteMultiple" href="javascript:void(0);">移入收藏夹</a></li>
+								</ul>
+							</div>
+
+							<div class="cart-toolbar-right">
+								<table class="cart-toolbar-table">
+									<tbody>
+										<tr>
+											<td class="sum-area">
+												<p class="sum-area-infoI">
+													已选商品
+													<em><b id="J_totalSkuNum">2</b></em>件，合计（不含运费）：
+													<b class="price"><dfn>¥</dfn><span id="J_totalSalePrice">7596.00</span></b>
+												</p>
+												<p class="sum-area-infoII">
+													( 商品总价：
+													<span class="price">
+														<dfn>¥</dfn>
+														<span id="J_totalMarketPrice">7596.00</span>
+													</span>
+													优惠：
+													<span class="price">
+														-<dfn>¥</dfn>
+														<span id="J_totalDiscount">0.00</span>
+													</span> )
+												</p>
+											</td>
+											<td class="btn-area">
+												<button class="btn--lg cart-btn-submit J_btnConfirm" id="pay-button" type="button" title="去结算">
+													<i class="btn-inner" id="pay-button-i">去结算</i>
+												</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/html" id="wrap-shop-list-content">
+			<div class="cart-head">
+					<table class="order-table">
+						<tbody>
+							<tr>
+								<th class="check-col">
+									<label class="J_viewCheckAll">
+										<i id="all-top" class="checkbox all-check"></i>
+										<a href="javascript:void(0);">全选</a>
+									</label>
+								</th>
+								<th class="goods-col">商品名称</th>
+								<th class="price-col">价格（元）</th>
+								<th class="quantity-col">数量</th>
+								<th class="benefit-col">优惠</th>
+								<th class="vcoin-col">赠送积分</th>
+								<th class="sum-col">小计（元）</th>
+								<th class="action-col">操作</th>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			{{each cart item}}
+				<div class="prod-list-wrap J_viewWrap" data-uniquecode="1_101226" data-id="{{item.id}}">
+					<table class="order-table ">
+						<tbody>
+							<tr class="prod-line">
+								<td class="check-col">
+
+									<input type="hidden" class="J_viewInfo" data-uniquecode="1_101226" data-carttype="1" data-suitecode=""
+									 data-suitediscount="" data-suitevcoin="" data-suitestatus="">
+									<input type="hidden" class="J_mainInfo" data-skuid="101226" data-saleprice="4298" data-marketprice="4298"
+									 data-vcoin="8596" data-marketable="1" data-disabled="1" data-fullpay="1" data-store="855" value="101226">
+									<i class="checkbox J_viewCheckBox J_operate {{item.checked}}" data-uniquecode="1_101226"></i>
+								</td>
+
+								<td class="prod-pic">
+									<a href="/product/10000467?colorSkuid=101226" target="_blank">
+										<div class="figure">
+											<img src="{{item.imgs[0]}}">
+
+										</div>
+									</a>
+									<div class="tip-arrow arrow-down"><em></em><span></span></div>
+								</td>
+								<td class="goods-col">
+									<a class="goods-link" href="/product/10000467?colorSkuid=101226" target="_blank">
+										iQOO Monster 12GB+256GB 电光蓝
+									</a>
+									<br>颜色：电光蓝
+								</td>
+								<td class="price-col">{{item.price}}</td>
+
+								<td>
+									<span class="number-box">
+										<a class="reduce-num J_reduceNum J_operate" href="javascript:;">-</a>
+										<input type="number" class="prod-num J_viewNum J_operate" min="1" value="{{item.num}}" title="请输入购买量" readonly="">
+										<a class="add-num J_addNum J_operate" href="javascript:;">+</a>
+									</span>
+									<span class="help-line J_tip" style="display: none"></span>
+								</td>
+								<td><span class="J_viewDiscount">0.00</span></td>
+								<td class="J_viewVcoin">8596</td>
+								<td class="total-price J_viewSalePrice">{{item.price*item.num}}</td>
+								<td>
+									<input type="hidden" class="J_viewMarketPrice" value="{{item.price*item.num}}">
+									<a href="javascript:;" class="favorite J_favorite" data-skuid="101226" data-uniquecode="1_101226">加入到收藏夹</a>
+									<br>
+									<a href="javascript:;" class="J_delSingle" data-uniquecode="1_101226">删除</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			{{/each}}
+		</script>
+		<!-- footer -->
+		<footer id="footer-container"></footer>
+		<script src="/libs/requirejs/require.js" data-main="../js/shop"></script>
+	</body>
+</html>
