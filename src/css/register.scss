@@ -1,0 +1,237 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+/* base */
+/* *{margin: 0; padding: 0;}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0 none;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+body{
+    background: #f7f7f7;
+}
+.table-cell {
+    display: table-cell;
+}
+b, em, i {
+    font-weight: 400;
+    font-style: normal;
+} */
+
+/* register content */
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+.register .section[data-v-422f5835] {
+    width: 860px;
+    min-height: 670px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 80px;
+    overflow: hidden;
+}
+.register .section .logo-area[data-v-422f5835] {
+    width: 150px;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.register .section .title-item[data-v-422f5835] {
+    margin-top: 30px;
+}
+.register .section .outer-box[data-v-422f5835] {
+    width: 360px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+.vivo-logo-box[data-v-b30b945c] {
+    width: 160px;
+    height: 42px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.vivo-logo-box img[data-v-b30b945c] {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.register .section .title-item .title[data-v-422f5835] {
+    font-family: HYQiHei-FZS;
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+}
+.register .section .outer-box .inner-box[data-v-422f5835] {
+    width: 360px;
+}
+.register .section .outer-box .inner-box .country-box[data-v-422f5835] {
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #dedfe0;
+    font-size: 16px;
+    color: #000;
+    padding-left: 12px;
+    line-height: 48px;
+    position: relative;
+    cursor: pointer;
+}
+.register .section .outer-box .inner-box .country-box .show-country[data-v-422f5835] {
+    height: 46px;
+    position: relative;
+}
+.register .section .outer-box .inner-box .country-box .show-country .arrow[data-v-422f5835] {
+    width: 18.8px;
+    height: 10.2px;
+    float: right;
+    position: absolute;
+    top: 19px;
+    right: 15.2px;
+}
+.register .section .outer-box .inner-box .country-box .show-country .arrow img[data-v-422f5835] {
+    width: 18.8px;
+    height: 10.2px;
+    vertical-align: top;
+}
+.register .section .outer-box .inner-box .hint[data-v-422f5835] {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+    line-height: 19px;
+}
+.register .section .outer-box .inner-box .phone-box[data-v-422f5835] {
+    margin-top: 15px;
+    height: 48px;
+    border: 1px solid #dedfe0;
+    cursor: pointer;
+}
+.register .section .outer-box .inner-box .phone-box .phone-code[data-v-422f5835] {
+    width: 94px;
+    height: 46px;
+    padding-left: 12px;
+    line-height: 46px;
+    font-size: 16px;
+    color: #000;
+    float: left;
+    position: relative;
+}
+.register .section .outer-box .inner-box .phone-box .phone-code .show-code[data-v-422f5835] {
+    position: relative;
+}
+.register .section .outer-box .inner-box .phone-box .phone-code .show-code[data-v-422f5835]:after {
+    content: "";
+    width: 13.2px;
+    height: 7.7px;
+    position: absolute;
+    top: 21.3px;
+    right: 19.3px;
+    background: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/arrow-down.42027c9.png) no-repeat;
+    background-size: 100% 100%;
+}
+.register .section .outer-box .inner-box .phone-box .input[data-v-422f5835] {
+    float: left;
+    width: 264px;
+    font-size: 16px;
+    color: #252525;
+    height: 46px;
+    line-height: 46px;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:after, .clearfix:before {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.register .section .outer-box .inner-box .protocol-box[data-v-422f5835] {
+    margin-top: 20px;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+}
+.register .section .outer-box .inner-box .protocol-box .check-box[data-v-422f5835] {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dedfe0;
+    margin-top: 1px;
+    float: left;
+    position: relative;
+}
+.register .section .outer-box .inner-box .protocol-box .check-box img[data-v-422f5835] {
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    top: 4px;
+    left: 1px;
+}
+.register .section .outer-box .inner-box .protocol-box .span1[data-v-422f5835] {
+    margin-left: 8px;
+    color: #252525;
+}
+.register .section .outer-box .inner-box .protocol-box .span2[data-v-422f5835] {
+    color: #009bfd;
+    cursor: pointer;
+}
+.register .section .outer-box .inner-box .button[data-v-422f5835] {
+    width: 100%;
+    height: 48px;
+    background-color: #46a1fa;
+    background-image: linear-gradient(90deg,#46a1fa,#067df8);
+    font-size: 17px;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+}
+.foot[data-v-99b54c16] {
+    margin-top: 135px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 11px;
+    color: #9d9d9d;
+}
+.foot .copyright[data-v-99b54c16] {
+    padding: 10px 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+.foot .service .to-service[data-v-99b54c16] {
+    text-decoration: none;
+    color: #666;
+}
+.foot .service .to-service img[data-v-99b54c16] {
+    width: 16px;
+    height: 14px;
+    vertical-align: text-bottom;
+}
+.foot .service .to-service .phone[data-v-99b54c16] {
+    width: 12px;
+    height: 15px;
+}
+#vivo-userpwd{
+    position: absolute;
+    left: 90px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    width: 253px;
+}
+#vivo-username{
+    position: relative;
+    width: 300px;
+    height: 45px;
+    border: none;
+    outline: none;
+}
+#phone-box{
+    position: relative;
+}

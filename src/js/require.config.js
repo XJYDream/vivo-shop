@@ -8,7 +8,8 @@ require.config({
         "template" : "libs/art-template/template-web",
         "swiper" : "libs/swiper/js/swiper.min",
         "zoom" : "libs/jquery-plugins/jquery.elevateZoom-3.0.8.min",
-        "fly" : "libs/jquery-plugins/jquery.fly"
+        "fly" : "libs/jquery-plugins/jquery.fly",
+        "cookie" : "libs/jquery-plugins/jquery.cookie"
     },
     // 垫片， 给不满足AMD规范的插件又要依赖于别的模块
     shim: {
@@ -17,6 +18,9 @@ require.config({
         },
         "fly" : {
             deps: ['jquery']
+        },
+        "cookie" : {
+            deps : ['jquery']
         }
     }
 })

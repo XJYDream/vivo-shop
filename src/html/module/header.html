@@ -8,10 +8,14 @@
     </ul>
     <div class = "header-top-right">
         <a href="/html/shop.html" id="car-num">购物车</a>
-        <div>
-            <a href="/src/html/login.html">登录</a>
+        <div id="header-login">
+            <a href="/html/login.html">登录</a>
             <i>|</i>
-            <a href="/src/html/register.html">注册</a>
+            <a href="/html/register.html">注册</a>
+        </div>
+        <div id="header-welcome" class="no-display">
+            欢迎您，<a href="javascript:;">烦人的情绪</a>
+            <a id="exit" href="javascript:;">退出</a>
         </div>
     </div>
 </div>
@@ -327,7 +331,8 @@
                     </li>
         </ul>
     </div>
-    <span></span>
+    <input type="text" class="no-display" id="big-search">
+    <span id="search"></span>
 </div>
 <ul id="side-bar" class="nolocked">
     <li class="iconshop icon-cart-fine shopcart" data-index="1" data-name="购物车">

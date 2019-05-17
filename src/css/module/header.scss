@@ -476,3 +476,16 @@ header #header-bottom #header-hover-list #I .other p{
     background-repeat: no-repeat;
     background-position: 0 0;
 }
+.no-display{
+    display: none !important;
+}
+#big-search{
+    position: relative;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    margin: auto;
+    width: 550px;
+    height: 45px;
+    outline: none;
+
+}

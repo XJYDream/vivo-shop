@@ -1,11 +1,12 @@
-define(['jquery'], $ => {
+define(['jquery', 'cookie'], $ => {
     function Header () {
         this.container = $("#header-container");
         // header加载完毕 调用方法
         this.load().then(() => {
-            this.search();
             this.navAc();
+            this.searchOut();
             this.calcCartNum();
+            this.addAttr();
         });
     }
 
@@ -18,9 +19,34 @@ define(['jquery'], $ => {
                 })
             });
         },
+        // 点击span显示搜索框  点击 不在当前搜索框范围 隐藏
+        searchOut () {
+            $('#search').on('click', () => {
+                $('#header-hover-container').addClass('no-display');
+                // .animate({width:'toggle'},500);
+                console.log($('#big-search'));
+                // 动画方法本身就有隐藏元素的作用
+                $('#big-search').removeClass('no-display');
+            });
+            this.search();
+            $('body').on('click', (e) => {
+                let target = e.target;
+                console.log(target.closest("#big-search"));
+                // .length == 0 无效
+                // 判断存在搜索大框 才进入次级if
+                if($('#big-search'))
+                if(target.closest("#big-search") == undefined){
+                    $('#big-search').addClass('no-display');
+                    $('#header-hover-container').removeClass('no-display')
+                }
+            })
+        },
         search () {
             //搜索框
-            $("#search-input").on('keyup', function () {
+            // 动态消失的 #header-hover-container
+            // 显示的 #big-search
+            // 点击按钮 #search 
+            $("#big-search").on('keyup', function () {
                 let keyWords = $(this).val();
                 // 带上关键字请求jsonp接口
                 $.getJSON('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?cb=?&wd='+keyWords, data => {
@@ -104,6 +130,25 @@ define(['jquery'], $ => {
             }
             $("#car-num").html('购物车'+(num));
             $("#fixed-shop-num").html(num);
+        },
+        addAttr() {
+            // 获取 两个div  一个显示 一个隐藏
+            // 并且对cookie操作
+            $('#header-login').addClass('no-display');
+            $('#header-welcome').removeClass('no-display');
+            // login存cookie 此处取和删  
+            // 想显示自己的
+            // let username = $.cookie("username");
+            // jq 选择器 html(变量);
+            // $('#exit') 刚开始 不存在  display 需要事件委托
+            $('.header-top-right').on('click', '#exit', (e) => {
+                if(confirm("确定要退出登录吗？")){
+                    $('#header-login').removeClass('no-display');
+                    $('#header-welcome').addClass('no-display');
+                    // 删除cookie
+                    $.removeCookie("username", { path: '/' });
+                }
+            });
         }
     })
 

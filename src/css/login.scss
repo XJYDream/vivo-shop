@@ -1,0 +1,404 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+/* base */
+/* *{margin: 0; padding: 0;}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0 none;
+}
+img{
+    border: none;
+    vertical-align: top;
+}
+body{
+    background: #f7f7f7;
+}
+.table-cell {
+    display: table-cell;
+}
+b, em, i {
+    font-weight: 400;
+    font-style: normal;
+} */
+
+/* login content */
+.banner-panel[data-v-4669b53b] {
+    width: 100%;
+}
+.banner-panel .banner[data-v-4669b53b] {
+    height: 780px;
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+.banner-panel .banner .logo[data-v-4669b53b] {
+    position: absolute;
+    top: 0;
+    left: 243px;
+}
+.banner-panel .banner .logo>a[data-v-4669b53b] {
+    display: block;
+    height: 52px;
+    width: 145px;
+    background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/logo-1.e4aed09.png);
+    background-size: 100% 100%;
+}
+.banner-panel .banner .layout[data-v-4669b53b] {
+    position: absolute;
+    top: 74px;
+    right: 0;
+    width: 420px;
+    background-color: hsla(0,0%,100%,.97);
+}
+.banner-panel .banner .layout .inner-box[data-v-4669b53b] {
+    padding: 30px 30px 20px;
+    min-height: 513px;
+}
+.banner-panel .banner .layout .inner-box .logo-area[data-v-4669b53b] {
+    width: 160px;
+    height: 42px;
+    margin: auto;
+    cursor: pointer;
+}
+.banner-panel .banner .layout .inner-box .logo-area img[data-v-4669b53b] {
+    width: 100%;
+    height: 100%;
+}
+.banner-panel .banner .layout .inner-box .title[data-v-4669b53b] {
+    margin-top: 15px;
+    font-family: HYQiHei-FZS;
+    font-size: 19px;
+    font-weight: 400;
+    font-stretch: normal;
+    letter-spacing: 0;
+    color: #000;
+    text-align: center;
+}
+.banner-panel .banner .layout .inner-box .toggle-module[data-v-4669b53b] {
+    text-align: right;
+    font-size: 14px;
+    color: #0091ff;
+    margin-top: 20px;
+}
+.banner-panel .banner .layout .inner-box .toggle-module>span[data-v-4669b53b] {
+    cursor: pointer;
+}
+.banner-panel .banner .layout .inner-box .input-area .phone-box[data-v-4669b53b] {
+    margin-top: 15px;
+    width: 360px;
+    height: 48px;
+    border: 1px solid #dedfe0;
+    position: relative;
+}
+.banner-panel .banner .layout .inner-box .input-area .phone-box .sms-phone-code[data-v-4669b53b] {
+    width: 61px;
+}
+.banner-panel .banner .layout .inner-box .input-area .phone-box .phone-code[data-v-4669b53b] {
+    float: left;
+    position: relative;
+    width: 74px;
+}
+.banner-panel .banner .layout .inner-box .input-area .phone-box .phone-code .cursor[data-v-4669b53b] {
+    cursor: inherit;
+}
+.banner-panel .banner .layout .inner-box .input-area .phone-box .phone-code .code-item[data-v-4669b53b] {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 12px;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
+    cursor: pointer;
+}
+.banner-panel .banner .layout .inner-box .input-area .phone-box .sms-input[data-v-4669b53b] {
+    padding-left: 0;
+}
+.banner-panel .banner .layout .inner-box .input-area .phone-box .input[data-v-4669b53b] {
+    width: 274px;
+    float: left;
+    padding-left: 20px;
+    font-family: inherit;
+}
+.banner-panel .banner .layout .inner-box .input-area .input[data-v-4669b53b] {
+    height: 46px;
+    font-size: 16px;
+    color: #000;
+}
+input {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+input {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: transparent!important;
+}
+input {
+    letter-spacing: 1px!important;
+}
+input {
+    border: none;
+}
+img, input {
+    vertical-align: middle;
+}
+a, button, input, select, textarea {
+    outline: 0;
+}
+input {
+    line-height: normal;
+}
+.banner-panel .banner .layout .inner-box .code-box[data-v-4669b53b] {
+    margin-top: 15px;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 12px;
+    border: 1px solid #dedfe0;
+    position: relative;
+}
+.clearfix:after, .clearfix:before {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+*, :after, :before {
+    box-sizing: inherit;
+}
+.banner-panel .banner .layout .inner-box .code-box .input[data-v-4669b53b] {
+    float: left;
+    width: 226px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+}
+.get-code-pc {
+    position: relative;
+    float: right;
+    width: 120px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-size: 15px;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+}
+.clearfix:after {
+    clear: both;
+}
+.get-code-pc .get {
+    color: #0091ff;
+    cursor: pointer;
+}
+.get-code-pc>span {
+    display: inline-block;
+    height: 100%;
+}
+.get-code-pc .separator {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 1px;
+    height: 33px;
+    padding: 0;
+    background-color: #dedfe0;
+}
+.banner-panel .banner .layout .inner-box .check-box[data-v-4669b53b] {
+    margin-top: 19px;
+    font-size: 14px;
+}
+.banner-panel .banner .layout .inner-box .check-box .sms-errtip[data-v-4669b53b] {
+    font-size: 14px;
+    color: #ec3f3f;
+    text-align: left;
+    float: left;
+}
+.banner-panel .banner .layout .inner-box .check-box .auto-login[data-v-4669b53b] {
+    color: #666;
+    float: right;
+}
+.banner-panel .banner .layout .inner-box .check-box .auto-login .check[data-v-4669b53b] {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 1px solid #dedfe0;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.banner-panel .banner .layout .inner-box .check-box .auto-login .check>img[data-v-4669b53b] {
+    vertical-align: baseline;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+}
+.banner-panel .banner .layout .inner-box .login-button[data-v-4669b53b] {
+    width: 360px;
+    height: 48px;
+    background-color: #46a1fa;
+    background-image: linear-gradient(90deg,#46a1fa,#067df8);
+    line-height: 48px;
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.banner-panel .banner .layout .inner-box .register-button[data-v-4669b53b] {
+    width: 360px;
+    height: 48px;
+    line-height: 48px;
+    border: 1px solid #0091ff;
+    color: #0091ff;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.banner-panel .banner .layout .inner-box .hint3[data-v-4669b53b] {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #999;
+}
+.banner-panel .banner .layout .inner-box .forget-pwd[data-v-4669b53b] {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.banner-panel .banner .layout .inner-box .other-way-login[data-v-4669b53b] {
+    margin-top: 30px;
+    color: #999;
+    font-size: 13px;
+    text-align: center;
+}
+.banner-panel .banner .layout .inner-box .other-way-login .o-title[data-v-4669b53b] {
+    position: relative;
+}
+.banner-panel .banner .layout .inner-box .other-way-login .o-title[data-v-4669b53b]:before {
+    content: "";
+    width: 130px;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.banner-panel .banner .layout .inner-box .other-way-login .o-title[data-v-4669b53b]:after {
+    content: "";
+    width: 130px;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.banner-panel .banner .layout .inner-box .other-way-login .icon-box[data-v-4669b53b] {
+    text-align: center;
+    margin-top: 15px;
+}
+.banner-panel .banner .layout .inner-box .other-way-login .icon-box .icon-item[data-v-4669b53b]:first-child {
+    margin-left: 0;
+}
+.banner-panel .banner .layout .inner-box .other-way-login .icon-box .icon-item[data-v-4669b53b] {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    margin-left: 18px;
+}
+.banner-panel .banner .layout .inner-box .other-way-login .icon-box .icon-item .img-QQ[data-v-4669b53b] {
+    width: 26px;
+    height: 26px;
+    background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/QQ.dca07e2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    cursor: pointer;
+}
+.banner-panel .banner .layout .inner-box .other-way-login .icon-box .icon-item .img-weixin[data-v-4669b53b] {
+    width: 26px;
+    height: 26px;
+    background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/weixin.2360293.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    cursor: pointer;
+}
+.banner-panel .banner .layout .inner-box .other-way-login .icon-box .icon-item .img-zhifubao[data-v-4669b53b] {
+    width: 26px;
+    height: 26px;
+    background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/zhifubao.5349adf.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+}
+.banner-panel .banner .layout .inner-box .other-way-login .icon-box .icon-item .img-weibo[data-v-4669b53b] {
+    width: 26px;
+    height: 26px;
+    background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/weibo.d8c0561.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    cursor: pointer;
+}
+.banner-panel .banner .layout .inner-box .other-way-login .icon-box .icon-item .img-renren[data-v-4669b53b] {
+    width: 26px;
+    height: 26px;
+    background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/renren.6be0149.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+}
+.banner-panel .banner .layout .inner-box .input-area .phone-box .phone-code .cursor[data-v-4669b53b] {
+    cursor: inherit;
+}
+.foot[data-v-99b54c16] {
+    margin-top: 135px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 11px;
+    color: #9d9d9d;
+}
+.foot .service .to-service[data-v-99b54c16] {
+    text-decoration: none;
+    color: #666;
+}
+.foot .service .to-service img[data-v-99b54c16] {
+    width: 16px;
+    height: 14px;
+    vertical-align: text-bottom;
+}
+.foot .service .to-service .online-person[data-v-99b54c16] {
+    margin-right: 40px;
+}
+.foot .service .to-service .phone[data-v-99b54c16] {
+    width: 12px;
+    height: 15px;
+}
+.foot .copyright[data-v-99b54c16] {
+    padding: 10px 0;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+#input-username{
+    position: absolute;
+    left: 40px;
+}
+#get-code-pc{
+    position: absolute;
+    left: 230px;
+}
