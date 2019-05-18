@@ -28,6 +28,7 @@ require(['require.config'], () => {
                     console.log("has?");
                     $('.all-check').removeClass('checked');
                 }
+                this.renderTotalPrice();
             }
             // 全选的按钮点击响应
             checkMethod() {
@@ -55,6 +56,7 @@ require(['require.config'], () => {
                     }
                     localStorage.setItem('cart', JSON.stringify(cart));
                 });
+                this.renderTotalPrice();
             }
             // 删除按钮响应
             delResp(target) {
@@ -143,8 +145,13 @@ require(['require.config'], () => {
                 cart = JSON.parse(cart);
                 let totalPrice = 0;
                 cart.forEach((item,i) => {
-                    totalPrice += item.price*item.num;
+                    // 商品被选中
+                    // totalPrice += item.price*item.num;
+                    if(item.checked === "checked"){
+                        totalPrice += item.price*item.num;
+                    }
                 });
+                totalPrice = totalPrice.toFixed(2);
                 $("#sum-area-container").html(template('sum-area-content', {totalPrice}));
             }
         }
