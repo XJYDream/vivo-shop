@@ -7,6 +7,7 @@ define(['jquery', 'cookie'], $ => {
             this.searchOut();
             this.calcCartNum();
             this.addAttr();
+            // this.search();
         });
     }
 
@@ -24,22 +25,12 @@ define(['jquery', 'cookie'], $ => {
             $('#search').on('click', () => {
                 $('#header-hover-container').addClass('no-display');
                 // .animate({width:'toggle'},500);
-                console.log($('#big-search'));
+                // console.log($('#big-search'));
                 // 动画方法本身就有隐藏元素的作用
                 $('#big-search').removeClass('no-display');
-            });
             this.search();
-            $('body').on('click', (e) => {
-                let target = e.target;
-                console.log(target.closest("#big-search"));
-                // .length == 0 无效
-                // 判断存在搜索大框 才进入次级if
-                if($('#big-search'))
-                if(target.closest("#big-search") == undefined){
-                    $('#big-search').addClass('no-display');
-                    $('#header-hover-container').removeClass('no-display')
-                }
-            })
+            });
+            
         },
         search () {
             //搜索框
@@ -52,7 +43,19 @@ define(['jquery', 'cookie'], $ => {
                 $.getJSON('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?cb=?&wd='+keyWords, data => {
                   console.log(data);
                 })
-              })
+              });
+            
+            $('body').on('click', (e) => {
+                let target = e.target;
+                if(!$('#big-search').hasClass('no-display') && target.closest("#search") == undefined){
+                    console.log(1);
+                    if(target.closest("#big-search") == undefined){
+                        // console.log(1);
+                        $('#big-search').addClass('no-display');
+                        $('#header-hover-container').removeClass('no-display')
+                    }
+                }
+            });
         },
         navAc () {
             // 事件委托ul
